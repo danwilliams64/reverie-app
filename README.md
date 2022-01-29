@@ -1,5 +1,7 @@
 # Reverie
 
+[![Build and Test](https://github.com/danwilliams64/reverie-app/actions/workflows/build-test.yml/badge.svg)](https://github.com/danwilliams64/reverie-app/actions/workflows/build-test.yml)
+
 Your Last.fm scrobbles, on this day, in years past.
 
 ![Reverie Screenshots](.github/reverie_screens.png)
