@@ -1,0 +1,8 @@
+--enable fileHeader
+  --header strip
+
+--indent 2
+--importgrouping alpha
+--maxwidth 120
+--wraparguments before-first
+

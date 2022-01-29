@@ -1,0 +1,38 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  PLATFORM_IOS: iOS Simulator,name=iPhone 13 Pro Max
+
+jobs:
+  build:
+    name: Build and Test all test targets
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: SwiftFormat
+        run: |
+          swiftformat --verbose .
+          git diff --exit-code HEAD
+
+      - name: Build
+        run: |
+          xcodebuild build-for-testing \
+            -project Reverie.xcodeproj \
+            -scheme Reverie \
+            -destination platform="$PLATFORM_IOS"
+      - name: Test
+        run: |
+          xcodebuild test-without-building \
+            -project Reverie.xcodeproj \
+            -scheme Reverie \
+            -destination platform="$PLATFORM_IOS"
+

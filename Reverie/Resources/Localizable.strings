@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Resoundly
+
+  Created by Dan on 19/08/2021.
+  
+*/
+
+"APP_NAME" = "Reverie";
+"SETTINGS" = "Settings";
+"USERNAME_PLACEHOLDER" = "Last.fm Username";
+"DELETE" = "DELETE";
+
+// Onboarding
+"ONBOARDING_SUBTITLE" = "Your Last.fm music history — on this day";
+"ONBOARDING_DESCRIPTION" = "Helping you rediscover the music you love";
+"ONBOARDING_USERNAME_SEARCH_PLACEHOLDER" = "Search by username";
+"ONBOARDING_RECENT_USERS" = "Recent";
+
+// Settings
+"SETTINGS_USERNAME_TITLE" = "Username";
+"SETTINGS_CHANGE_USER" = "Change User";
+
+// Timeline
+"SEE_ALL" = "See All";
+
+// Track Search
+"SEARCH_TITLE" = "Search Results";
